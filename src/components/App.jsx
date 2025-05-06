@@ -6,10 +6,10 @@ import { useEffect } from "react";
 import { getUserAuth } from "../action";
 import { connect } from "react-redux";
 
-function App(props) {
+function App({ getUserAuth }) {
 	useEffect(() => {
-		props.getUserAuth();
-	}, []);
+		getUserAuth();
+	}, [getUserAuth]);
 
 	return (
 		<div className="App">

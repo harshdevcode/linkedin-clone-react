@@ -146,22 +146,22 @@ function Left(props) {
 			<ArtCard>
 				<UserInfo>
 					<CardBackground />
-					<a>
+					<Link>
 						<Photo photoUrl={photoUrl} />
 						<Link>Welcome, {props.user ? props.user.displayName : "there"}!</Link>
-					</a>
-					<a>
+					</Link>
+					<Link>
 						<AddPhotoText>Add a photo</AddPhotoText>
-					</a>
+						</Link>
 				</UserInfo>
 				<Widget>
-					<a>
+					<Link>
 						<div>
 							<span>Connections</span>
 							<span>Grow Your Network</span>
 						</div>
 						<img src="/images/widget-icon.svg" alt="" />
-					</a>
+						</Link>
 				</Widget>
 				<Item>
 					<span>
@@ -171,21 +171,21 @@ function Left(props) {
 				</Item>
 			</ArtCard>
 			<CommunityCard>
-				<a>
+				<Link>
 					<span>Groups</span>
-				</a>
-				<a>
+					</Link>
+				<Link>
 					<span>
 						Events
 						<img src="/images/plus-icon.svg" alt="" />
 					</span>
-				</a>
-				<a>
+				</Link>
+				<Link>
 					<span>Follow Hashtags</span>
-				</a>
-				<a>
+					</Link>
+				<Link>
 					<span>Discover More</span>
-				</a>
+					</Link>
 			</CommunityCard>
 		</Container>
 	);

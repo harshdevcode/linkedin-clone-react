@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Left from "./Left";
 import Main from "./Main";
 import Right from "./Right";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Container = styled.div`
 	max-width: 100%;
@@ -68,7 +69,7 @@ function Home(props) {
 			<Content>
 				<Section>
 					<h5>
-						<a>Hiring in a hurray..?</a>
+					<Link>Hiring in a hurray..?</Link>
 					</h5>
 					<p>- Find talented pros in record time with LinkedIn and keep business moving.</p>
 				</Section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -97,18 +98,18 @@ function Right() {
 				</Title>
 				<FeedList>
 					<li>
-						<a>
+						<Link>
 							<Avatar />
-						</a>
+							</Link>
 						<div>
 							<span>#linkedin</span>
 							<button>Follow</button>
 						</div>
 					</li>
 					<li>
-						<a>
+						<Link>
 							<Avatar />
-						</a>
+							</Link>
 						<div>
 							<span>#video</span>
 							<button>Follow</button>

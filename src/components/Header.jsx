@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 import { signOutAPI } from "../action";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Container = styled.div`
 	background-color: #fff;
@@ -209,59 +210,59 @@ function Header(props) {
 					</SearchIcon>
 				</Search>
 				<SignOutMobile onClick={() => props.signOut()}>
-					<a>Sign Out</a>
+					<Link>Sign Out</Link>
 				</SignOutMobile>
 				<Nav>
 					<NavListWrap>
 						<NavList className="active">
-							<a href="/feed">
+							<Link to="/feed">
 								<img src="/images/nav-home.svg" alt="" />
 								<span>Home</span>
-							</a>
+							</Link>
 						</NavList>
 						<NavList>
-							<a href="/feed">
+							<Link to="/feed">
 								<img src="/images/nav-network.svg" alt="" />
 								<span>My Network</span>
-							</a>
+							</Link>
 						</NavList>
 						<NavList>
-							<a href="/feed">
+							<Link to="/feed">
 								<img src="/images/nav-jobs.svg" alt="" />
 								<span>Jobs</span>
-							</a>
+							</Link>
 						</NavList>
 						<NavList>
-							<a href="/feed">
+							<Link to="/feed">
 								<img src="/images/nav-messaging.svg" alt="" />
 								<span>Messaging</span>
-							</a>
+							</Link>
 						</NavList>
 						<NavList>
-							<a href="/feed">
+							<Link to="/feed">
 								<img src="/images/nav-notifications.svg" alt="" />
 								<span>Notifications</span>
-							</a>
+							</Link>
 						</NavList>
 						<User>
-							<a>
+						<Link>
 							<img src={props.user?.photoURL || "/images/user.svg"} alt="Profile" />
 
 								<span>
 									Me <img src="/images/down-icon.svg" alt="" />
 								</span>
-							</a>
+							</Link>
 							<SignOut onClick={() => props.signOut()}>
-								<a>Sign Out</a>
+								<Link>Sign Out</Link>
 							</SignOut>
 						</User>
 						<Work>
-							<a>
+							<Link>
 								<img src="/images/nav-work.svg" alt="" />
 								<span>
 									Work <img src="/images/down-icon.svg" alt="" />
 								</span>
-							</a>
+								</Link>
 						</Work>
 					</NavListWrap>
 				</Nav>
